@@ -24,6 +24,7 @@
     <ProjectGuid>{c9a2a8c6-4b3a-4db2-9924-2a3f58ca991c}</ProjectGuid>
     <RootNamespace>chernovick</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Calculator</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,11 +128,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Button.cpp" />
-    <ClCompile Include="chernovick.cpp" />
+    <ClCompile Include="GUI\Button.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Backend\Operation.cpp" />
+    <ClCompile Include="Backend\StringToRPN.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Button.h" />
+    <ClInclude Include="GUI\Button.h" />
+    <ClInclude Include="Backend\Operation.h" />
+    <ClInclude Include="Backend\StringToRPN.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\..\..\Downloads\arial\arial.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
