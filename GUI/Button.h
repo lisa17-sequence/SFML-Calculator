@@ -1,7 +1,6 @@
 #pragma once
-
 #include <SFML/Graphics.hpp>
-#include<vector>
+#include <vector>
 
 namespace GUI {
 	//std::vector<sf::RectangleShape> createGRID();

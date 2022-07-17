@@ -127,11 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Button.cpp" />
-    <ClCompile Include="chernovick.cpp" />
+    <ClCompile Include="GUI\Button.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Backend\Operation.cpp" />
+    <ClCompile Include="Backend\StringToRPN.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Button.h" />
+    <ClInclude Include="GUI\Button.h" />
+    <ClInclude Include="Backend\Operation.h" />
+    <ClInclude Include="Backend\StringToRPN.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

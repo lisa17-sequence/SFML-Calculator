@@ -1,7 +1,14 @@
-﻿#include <SFML/Graphics.hpp>
+﻿#include "Backend/Operation.h"
+#include "Backend/StringToRPN.h"
+
+#include <SFML/Graphics.hpp>
+
+
 #include <iostream>
-#include<vector>
-#include "Button.h"
+#include <vector>
+
+#include "GUI/Button.h"
+
 int main()
 {
 

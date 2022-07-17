@@ -1,7 +1,13 @@
+#include "../Backend/StringToRPN.h"
+#include "../Backend/Operation.h"
 #include "Button.h"
+
 #include <iostream>
 #include <string>
 #include <vector>
+
+
+
 namespace GUI {
 	ButtonGrid ButtonGrid::createGRID()
 	{
@@ -14,8 +20,6 @@ namespace GUI {
 				xOffset = 0;
 			}
 			Button button({ xOffset, yOffset });
-			//button.buttonShape.setPosition(xOffset, yOffset);
-			//assert(button.buttonShape.getPosition().x == 0);
 			xOffset += 115;
 			grid.buttonGrid.push_back(button);
 		}
@@ -149,7 +153,10 @@ namespace GUI {
 					break;
 				case 19:
 					cop = "=";
-					std::cout << ' ' << s;
+					std::cout << " ";
+					StringToRPN tempRPN;
+					Operation outcomestr(tempRPN.RPN(s));
+					s = "";
 					break;
 
 
